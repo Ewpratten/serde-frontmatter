@@ -1,17 +1,19 @@
 [package]
-name = "<crate_name>"
+name = "serde-frontmatter"
 version = "0.1.0"
 authors = ["Evan Pratten <ewpratten@gmail.com>"]
 edition = "2018"
-description = "<description>"
-documentation = "https://docs.rs/<crate_name>"
+description = "Serde support for Jekyll front matter"
+documentation = "https://docs.rs/serde-frontmatter"
 readme = "README.md"
-homepage = "https://github.com/ewpratten/<repo_name>"
-repository = "https://github.com/ewpratten/<repo_name>"
+homepage = "https://github.com/ewpratten/serde-frontmatter"
+repository = "https://github.com/ewpratten/serde-frontmatter"
 license = "GPL-3.0"
-keywords = []
-categories = []
+keywords = ["serde", "serialization", "deserialization", "frontmatter", "jekyll"]
+categories = ["data-structures", "encoding", "parsing", "parser-implementations"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+serde = { version = "1.0.126", features = ["derive"] }
+serde_yaml = "0.8"
